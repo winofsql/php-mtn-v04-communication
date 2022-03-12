@@ -2,4 +2,4 @@
 
 - 会話コントロールによるコントロールプロテクト
 
-![image](https://user-images.githubusercontent.com/1501327/158038777-1a1aaac7-f6cf-4616-8136-342dc5051222.png)
+![image](https://user-images.githubusercontent.com/1501327/158038817-b88e3d8d-4a43-46a3-a864-e52c3ed064bb.png)
