@@ -11,8 +11,8 @@ require_once("model.php");
 // データ表示処理
 if ( $_POST["btn"] == "確認" ) {
 
-     // 会話番号( 確認がクリックされた )
-     $gno = 1;
+    // 会話番号( 確認がクリックされた )
+    $gno = 1;
 
     $row = check($mysqli);
     if ( $row ) {
