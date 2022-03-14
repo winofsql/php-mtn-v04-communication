@@ -11,9 +11,6 @@ require_once("model.php");
 // データ表示処理
 if ( $_POST["btn"] == "確認" ) {
 
-    // 会話番号( 確認がクリックされた )
-    $gno = 1;
-
     $row = check($mysqli);
     if ( $row ) {
         $_POST["sname"] = $row["氏名"];
@@ -45,13 +42,13 @@ if ( $_POST["btn"] == "確認" ) {
     $disabled_1 = $disabled_type;
     $disabled_2 = "";
 
+    // 次の画面の会話番号( 確認がクリックされた )
+    $gno = 2;
+
 }
 
 // データ更新処理
 if ( $_POST["btn"] == "更新" ) {
-
-     // 会話番号( 更新がクリックされた )
-    $gno = 2;
 
     $row = check($mysqli);
     // 社員コードが存在する
@@ -80,6 +77,9 @@ if ( $_POST["btn"] == "更新" ) {
     $disabled_1 = "";
     $disabled_2 = $disabled_type;
     
+    // 次の画面の会話番号( 更新がクリックされた )
+    $gno = 1;
+
 }
 
 require_once("syain-view.php");
